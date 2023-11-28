@@ -3,29 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@300;400;600;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Air Pods Max</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
         <div class="header--items">
           <div class="logo">
             <a href="#"><img src="./img/logo.svg" alt="logo" /></a>
           </div>
           <div class="menu">
-            <li>Info</li>
-            <li>Product</li>
-            <li>Contacts</li>
-            <button>BUY</button>
+            <ul class="menu--nav">
+              <li><a href="#">Info</a></li>
+              <li><a href="#">Product</a></li>
+              <li><a href="#">Contacts</a></li>
+              <button class="btn--nav"><a href="#">BUY</a></button>
+            </ul>
           </div>
         </div>
+        <div class="header--title">
+          <h1>
+            <span>Air</span><span>Pod</span><span class="title--s">S</span
+            ><span class="title--m">M</span><span class="title--ax">AX</span>
+          </h1>
+        </div>
         <div class="header--pods">
-            <img src="./img/airpodsBlack.png" alt="">
-            <img src="./img/airpodsBlue.png" alt="">
-            <img src="./img/airpodsRed.png" alt="">
-            <img src="./img/airpodsGren.png" alt="">
-            <img src="./img/airpodsWhite.png" alt="">
+          <img src="./img/airpodsBlack.png" alt="" />
+          <!-- <img src="./img/airpodsBlue.png" alt="" />
+          <img src="./img/airpodsRed.png" alt="" />
+          <img src="./img/airpodsGren.png" alt="" />
+          <img src="./img/airpodsWhite.png" alt="" /> -->
         </div>
       </div>
     </header>
