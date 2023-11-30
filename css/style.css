@@ -27,7 +27,7 @@ ul {
 }
 .header {
   min-height: 100vh;
-  background: linear-gradient(180deg, #b6b6b6 0%, rgba(235, 235, 235, 0) 100%);
+  background: linear-gradient(180deg, #b6b6b6 0%, rgba(235, 235, 235, 0) 100vh);
 }
 .container {
   max-width: 1300px;
@@ -56,24 +56,15 @@ ul {
 .header--pods {
   text-align: center;
 }
+.header--pods img {
+  width: 100%;
+}
 .header--title {
   padding-top: 140px;
   font-size: 100px;
   position: absolute;
-}
-.title--s {
-  display: inline-block;
-  transform: translateY(100px);
-}
-.title--m {
-  display: inline-block;
-  transform: translate(36px, 280px);
-}
-.title--ax {
-  display: inline-block;
-  transform: translate(-44px, 470px);
-  position: relative;
-  z-index: -1;
+  text-align: center;
+  margin: 0 auto;
 }
 .colors {
   text-align: center;
@@ -159,7 +150,7 @@ img {
   margin: 0 auto 80px;
 }
 .audio {
-  background-image: url('../img/men.jpg');
+  background-image: url("../img/men.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -180,7 +171,7 @@ img {
 .audio--text p {
   margin-bottom: 30px;
 }
-.audio--text button { 
+.audio--text button {
   padding: 14px 58px;
   border-radius: 30px;
   background-color: white;
@@ -190,13 +181,96 @@ img {
 footer {
   background-color: black;
 }
-small{
+small {
   display: flex;
   color: #fff;
   justify-content: center;
   align-items: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 small p {
   padding: 10px;
+}
+@media (max-width: 850px){
+  .header--title {
+    font-size: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .composition--title {
+    margin: 60px 0 20px 0;
+    font-size: 36px;
+  }
+  .color--pods {
+    gap: 12px;
+  }
+  
+  .composition {
+    margin-bottom: 60px;
+  }
+  .battery h2 {
+    font-size: 36px;
+    margin: 40px 0 10px 0;
+  }
+  .alive h2 {
+    font-size: 36px;
+    margin: 40px 0 20px 0;
+  }
+  .alive h1 {
+    font-size: 100px;
+    margin: 20px 0 20px 0;
+  }
+  .alive p {
+    margin: 0 auto 40px;
+  }
+}
+
+@media (max-width: 560px) {
+  .header--title {
+    font-size: 40px;
+  }
+  .color--title {
+    padding-top: 60px;
+  }
+  .color--text {
+    margin-bottom: 40px;
+  }
+  .composition {
+    margin-bottom: 30px;
+  }
+  .battery h2 {
+    margin: 20px 0 5px 0;
+  }
+  .compositionP {
+    width: 100%;
+    gap: 40px;
+    text-align: center;
+    margin: 0 auto;
+    align-items: center;
+  }
+  .composition--p {
+    flex-wrap: wrap;
+    text-align: center;
+
+    align-items: center;
+  }
+  .composition--p img {
+    margin: 0 auto;
+  }
+  .menu--nav{ 
+    gap: 20px;
+  }
+}
+
+@media (max-width: 414px) {
+  img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1496px) {
+  .color--pods {
+    flex-wrap: wrap;
+  }
 }
