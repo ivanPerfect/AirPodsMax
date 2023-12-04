@@ -53,6 +53,12 @@ ul {
   color: #fff;
   font-weight: 700;
 }
+.contentItem {
+  display: none;
+}
+.contentActive {
+  display: inline-block;
+}
 .header--pods {
   text-align: center;
 }
@@ -86,6 +92,9 @@ ul {
   display: flex;
   gap: 40px;
   justify-content: center;
+}
+.colorBtn.activeBtn{ 
+  display: none;
 }
 .colorBtn {
   border-radius: 30px;

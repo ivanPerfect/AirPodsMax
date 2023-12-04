@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="./index.js" defer></script>
     <title>Air Pods Max</title>
   </head>
   <body>
@@ -29,16 +30,34 @@
           </div>
         </div>
         <div class="header--title">
-          <h1>
-            AirPodS MAX
-          </h1>
+          <h1>AirPodS MAX</h1>
         </div>
         <div class="header--pods">
-          <img src="./img/airpodsBlack.png" alt="" />
-          <!-- <img src="./img/airpodsBlue.png" alt="" />
-          <img src="./img/airpodsRed.png" alt="" />
-          <img src="./img/airpodsGren.png" alt="" />
-          <img src="./img/airpodsWhite.png" alt="" /> -->
+          <img
+            class="contentItem contentActive color--black"
+            src="./img/airpodsBlack.png"
+            alt=""
+          />
+          <img
+            class="contentItem color--blue"
+            src="./img/airpodsBlue.png"
+            alt=""
+          />
+          <img
+            class="contentItem color--red"
+            src="./img/airpodsRed.png"
+            alt=""
+          />
+          <img
+            class="contentItem color--green"
+            src="./img/airpodsGren.png"
+            alt=""
+          />
+          <img
+            class="contentItem color--white"
+            src="./img/airpodsWhite.png"
+            alt=""
+          />
         </div>
       </div>
     </header>
@@ -51,19 +70,19 @@
             AirPods. The ultimate personal audio experience.
           </p>
           <div class="color--pods">
-            <button class="colorBtn">
+            <button class="colorBtn" data-button="color--blue">
               <img src="./img/colorBlue.jpg" alt="" srcset="" />
             </button>
-            <button class="colorBtn">
+            <button class="colorBtn" data-button="color--green">
               <img src="./img/colorGreen.jpg" alt="" srcset="" />
             </button>
-            <button class="colorBtn">
+            <button class="colorBtn" data-button="color--red">
               <img src="./img/colorRed.jpg" alt="" srcset="" />
             </button>
-            <button class="colorBtn">
+            <button class="colorBtn" data-button="color--white">
               <img src="./img/colorWhite.jpg" alt="" srcset="" />
             </button>
-            <button class="colorBtn">
+            <button class="colorBtn activeBtn" data-button="color--black">
               <img src="./img/colorBlack.jpg" alt="" srcset="" />
             </button>
           </div>
@@ -94,7 +113,31 @@
                 allowing you to maintain fit and isolation.
               </p>
             </div>
-            <img src="./img/compoBlack.jpg" alt="" />
+            <img
+              src="./img/compoBlack.jpg"
+              class="contentItem contentActive color--black "
+              alt=""
+            />
+            <img
+              src="./img/compoRed.jpg"
+              class="contentItem color--red"
+              alt=""
+            />
+            <img
+              src="./img/compoGreen.jpg"
+              class="contentItem color--green"
+              alt=""
+            />
+            <img
+              src="./img/compoWhite.jpg"
+              class="contentItem color--white"
+              alt=""
+            />
+            <img
+              src="./img/compoBlue.jpg"
+              class="contentItem color--blue"
+              alt=""
+            />
           </div>
         </div>
       </section>
@@ -105,11 +148,11 @@
             When stored in the sleek and lightweight Smart Case , AirPods Max
             enter a low-power state to save energy.
           </p>
-          <img src="./img/batteryBlack.jpg" alt="" />
-          <!-- <img src="./img/batteryGreen.jpg" alt="">
-          <img src="./img/batteryWhite.jpg" alt="">
-          <img src="./img/batteryRed.jpg" alt="">
-          <img src="./img/batteryBlue.jpg" alt=""> -->
+          <img src="./img/batteryBlack.jpg" class="contentItem contentActive color--black " alt="" />
+          <img src="./img/batteryGreen.jpg" class="contentItem color--green " alt="">
+          <img src="./img/batteryWhite.jpg" class="contentItem color--white " alt="">
+          <img src="./img/batteryRed.jpg" class="contentItem color--red" alt="">
+          <img src="./img/batteryBlue.jpg" class="contentItem color--blue" alt="">
         </div>
       </section>
       <section class="alive">
